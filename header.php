@@ -1,13 +1,6 @@
 <?php require_once( TEMPLATEPATH . './classes/Create_Menus.php' ); ?>
 <!DOCTYPE HTML>
-<!--[if lt IE 7]>
-<html class="ie6" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]>
-<html class="ie7" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]>
-<html class="ie8" lang="en"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en"><!--<![endif]-->
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -39,6 +32,7 @@
 		} ?>
   </title>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ) .print '?' . rand(); ?>"/>
+
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo( 'rdf_url' ); ?>" title="<?php printf( __
 	( '%s latest posts' ), esc_html( get_bloginfo( 'name' ) ) ) ?>"/>
 
