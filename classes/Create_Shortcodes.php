@@ -1,8 +1,8 @@
 <?php 
 namespace startertheme\shortcodes;
 /**
- * @author 
- * @copyright 2012
+ * @author A Walpole
+ *
  */
 
 class Create_Shortcodes {
@@ -31,5 +31,3 @@ class Create_Shortcodes {
 
 
 new \startertheme\shortcodes\Create_Shortcodes();
-
-?>

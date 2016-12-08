@@ -42,4 +42,4 @@ class Register_Sidebars {
 
 }
 
-new \startertheme\sidebars\Register_Sidebars(); ?>
+new \startertheme\sidebars\Register_Sidebars();

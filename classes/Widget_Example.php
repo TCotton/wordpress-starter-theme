@@ -90,5 +90,3 @@ class Widget_Example extends WP_Widget {
     }
 
 }
-
-?>

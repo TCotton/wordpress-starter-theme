@@ -5,9 +5,7 @@ namespace startertheme\options;
  * Admin_Options_Page
  * 
  * @package   
- * @author 
- * @copyright lolkittens
- * @version 2012
+ * @author
  * @access public
  */
 class Admin_Options_Page {
@@ -343,4 +341,4 @@ if (is_admin()) {
     new \startertheme\options\Admin_Options_Page();
 
 
-} ?>
+}

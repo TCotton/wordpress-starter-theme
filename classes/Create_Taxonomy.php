@@ -52,4 +52,4 @@ class Create_Taxonomy {
 
 }
 
-new \startertheme\taxonomy\Create_Taxonomy(); ?>
+new \startertheme\taxonomy\Create_Taxonomy();

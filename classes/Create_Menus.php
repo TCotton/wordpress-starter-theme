@@ -5,8 +5,7 @@ namespace startertheme\menu;
  * 
  * @package   
  * @author 
- * @copyright 
- * @version 2012
+ * @copyright
  * @access public
  * 
  * Class for creating menus
@@ -82,8 +81,3 @@ class Create_Menus {
 new \startertheme\menu\Create_Menus(); 
 
 echo '"', __NAMESPACE__, '"'; // outputs "MyProject"
-
-?>
-
-
-
