@@ -5,8 +5,8 @@
 
 <?php get_header(); ?>
 
-<div id="content">
-  <div id="main" class="clearfix">
+<div class="content">
+  <div class="main clearfix">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?>>
         <div class="article-header">
@@ -58,7 +58,6 @@
     <div id="post-not-found" class="clearfix">
       <div class="article-header">
         <h1><?php echo "Oops, Post Not Found!"; ?></h1>
-        </header>
         <div class="post-content">
           <p><?php echo "Uh Oh. Something is missing. Try double checking things."; ?></p>
         </div>

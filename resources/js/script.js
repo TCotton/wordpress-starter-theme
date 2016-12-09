@@ -2,41 +2,61 @@
 // Starts with Addy Osmani's module / facade
 // http://addyosmani.com/resources/essentialjsdesignpatterns/book/#highlighter_436043
 
-var GLOBALNAMESPACE = {};
+const GLOBALNAMESPACE = {};
 
-GLOBALNAMESPACE.NEWOBJECT = (function ($) {
-  var _private = {
+GLOBALNAMESPACE.NEWOBJECT = (function NEWOBJECT($) {
+
+  const fauxPrivate = {
     i: 5,
-    get: function () {
-      console.log('current value:' + this.i);
+    get: function get() {
+
+      console.log(`current value:${this.i}`);
+
     },
-    set: function (val) {
+    set: function set(val) {
+
       this.i = val;
+
     },
-    run: function () {
+    run: function run() {
+
       console.log('running');
+
     },
-    jump: function () {
+    jump: function jump() {
+
       console.log('jumping');
+
     }
   };
   return {
-    init: function (args) {
-      _private.set(args.val);
-      _private.get();
+    init: function init(args) {
+
+      fauxPrivate.set(args.val);
+      fauxPrivate.get();
       if (args.run) {
-        _private.run();
+
+        fauxPrivate.run();
+
       }
+      if (args.run) {
+
+        fauxPrivate.jump();
+
+      }
+
     }
-  }
+
+  };
+
 }(jQuery));
 
-window.onload = function () {
+window.onload = function onload() {
 
   GLOBALNAMESPACE.NEWOBJECT.init({
     run: true,
     val: 10
   });
-  //outputs current value: 10, running
+  // outputs current value: 10, running
 
 };

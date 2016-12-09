@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-  <div id="content">
+  <div class="content">
 
-    <div id="inner-content" class="wrap clearfix">
+    <div class="inner-content wrap clearfix">
 
-      <div id="main" class="clearfix">
+      <div class="main clearfix">
 
 				<?php if ( is_category() ) { ?>
           <h1 class="archive-title h2">
@@ -41,7 +41,7 @@
 					while ( have_posts() ):
 						the_post(); ?>
 
-            <div id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?>>
+            <div class="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?>>
 
               <div class="article-header">
 
@@ -88,7 +88,7 @@
 
 				<?php else: ?>
 
-          <div id="post-not-found" class="hentry clearfix">
+          <div class="post-not-found hentry clearfix">
             <div class="article-header">
               <h1><?php echo 'Oops, Post Not Found!'; ?></h1>
             </div>

@@ -20,6 +20,14 @@
   "linebreak-style": [
    "error",
    "windows"
+  ],
+  "comma-dangle": [
+   "error",
+   "only-multiline"
+  ],
+  "padded-blocks": [
+   "error",
+   "always"
   ]
  }
 }

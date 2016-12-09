@@ -5,7 +5,6 @@ namespace startertheme\content;
  *
  * @package  class for adding different content types with meta data and taxonomy if concerned. Includes validation and sanitization
  * @author Andy Walpole
- * @copyright AWalpole
  * @access public
  */
 

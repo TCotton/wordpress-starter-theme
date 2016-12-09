@@ -1,0 +1,23 @@
+@media screen {
+
+ @import 'variables';
+ @import 'reset';
+ @import 'functions';
+ @import 'mixins';
+ @import 'forms';
+ @import 'animate';
+
+ body {
+  font-size: #{$baseFontSize};
+  font-family: $secondaryFontFamily;
+  line-height: #{$baseLineHeight}em;
+ }
+
+ .wrapper {
+  width : 970px;
+  margin : 10px auto;
+ }
+
+}
+
+@import 'print';

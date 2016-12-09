@@ -46,16 +46,16 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="access" class="clearfix visuallyhidden">
+<div class="access clearfix visuallyhidden">
   <div class="skip-link"><a href="#content" title="<?php echo 'Skip to content' ?>"><?php echo
 			'Skip to content' ?></a></div>
 </div>
-<div id="wrapper">
-  <div id="header">
-    <div id="inner-header" class="wrap clearfix">
+<div class="wrapper">
+  <div class="header">
+    <div class="inner-header wrap clearfix">
 
       <!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-      <p id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow">
+      <p class="logo"><a href="<?php echo home_url(); ?>" rel="nofollow">
 					<?php bloginfo( 'name' ); ?>
         </a></p>
 

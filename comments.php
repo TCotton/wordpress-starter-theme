@@ -16,13 +16,13 @@ if ( post_password_required() ) { ?>
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ): ?>
-  <h3 id="comments" class="h2">
+  <h3 class="comments">
 		<?php comments_number( '<span>No</span> Responses', '<span>One</span> Response',
 			'<span>%</span> Responses' ); ?>
     to &#8220;
 		<?php the_title(); ?>
     &#8221;</h3>
-  <nav id="comment-nav">
+  <nav class="comment-nav">
     <ul class="clearfix">
       <li>
 				<?php previous_comments_link() ?>
@@ -35,7 +35,7 @@ if ( post_password_required() ) { ?>
   <ol class="commentlist">
 		<?php wp_list_comments( 'type=comment&callback=bones_comments' ); ?>
   </ol>
-  <nav id="comment-nav">
+  <nav class="comment-nav">
     <ul class="clearfix">
       <li>
 				<?php previous_comments_link() ?>
@@ -56,11 +56,11 @@ if ( post_password_required() ) { ?>
 	<?php endif; ?>
 <?php endif; ?>
 <?php if ( comments_open() ): ?>
-  <section id="respond" class="respond-form">
-    <h3 id="comment-form-title" class="h2">
+  <section class="respond respond-form">
+    <h3 class="comment-form-title">
 			<?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?>
     </h3>
-    <div id="cancel-comment-reply">
+    <div class="cancel-comment-reply">
       <p class="small">
 				<?php cancel_comment_reply_link(); ?>
       </p>
@@ -71,7 +71,7 @@ if ( post_password_required() ) { ?>
 						'<a href="<?php echo wp_login_url( get_permalink() ); ?>">', '</a>' ); ?></p>
       </div>
 		<?php else: ?>
-      <form action="<?php echo get_option( 'siteurl' ); ?>/wp-comments-post.php" method="post" id="commentform">
+      <form action="<?php echo get_option( 'siteurl' ); ?>/wp-comments-post.php" method="post" class="commentform">
 				<?php if ( is_user_logged_in() ): ?>
           <p class="comments-logged-in-as"><?php echo 'Logged in as' ?> <a
                 href="<?php echo get_option( 'siteurl' ); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a
@@ -79,7 +79,7 @@ if ( post_password_required() ) { ?>
 							<?php _e( "Log out" ); ?>
               &raquo;</a></p>
 				<?php else: ?>
-          <ul id="comment-form-elements" class="clearfix">
+          <ul class="comment-form-elements clearfix">
             <li>
               <label for="author"><?php echo 'Name' ?>
 								<?php if ( $req ) {
@@ -125,7 +125,7 @@ if ( post_password_required() ) { ?>
 					<?php comment_id_fields(); ?>
         </p>
         <div class="alert info">
-          <p id="allowed_tags" class="small"><strong>HTML5:</strong> <?php echo 'You can use these tags'; ?>:
+          <p class="allowed_tags small"><strong>HTML5:</strong> <?php echo 'You can use these tags'; ?>:
             <code><?php echo
 							allowed_tags(); ?></code></p>
         </div>

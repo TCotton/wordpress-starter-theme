@@ -1,7 +1,7 @@
 <?php get_header() ?>
 
-  <div id="container">
-    <div id="content">
+  <div class="container">
+    <div class="content">
 
 			<?php the_post() ?>
 

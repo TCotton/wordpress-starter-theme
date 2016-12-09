@@ -5,9 +5,9 @@
 
 <?php get_header(); ?>
 
-<div id="content">
-  <div id="inner-content" class="wrap clearfix">
-    <div id="main" class="clearfix">
+<div class="content">
+  <div class="inner-content wrap clearfix">
+    <div class="main clearfix">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?>>
           <div class="article-header">
@@ -41,7 +41,7 @@
 
 			<?php endwhile; ?>
 			<?php else : ?>
-        <div id="post-not-found" class="hentry clearfix">
+        <div class="post-not-found hentry clearfix">
           <div class="article-header">
             <h1>
 							<?php _e( "Oops, Post Not Found!" ); ?>

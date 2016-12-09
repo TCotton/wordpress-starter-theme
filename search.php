@@ -5,11 +5,11 @@
 
 <?php get_header(); ?>
 
-  <div id="content">
+  <div class="content">
 
-    <div id="inner-content" class="wrap clearfix">
+    <div class="inner-content wrap clearfix">
 
-      <div id="main" class="ninecol first clearfix">
+      <div class="main ninecol first clearfix">
 
         <h1 class="archive-title"><span>Search Results for:</span> <?php echo esc_attr( get_search_query
 					() ); ?></h1>
@@ -61,7 +61,7 @@
 
 				<?php else: ?>
 
-          <div id="post-not-found" class="hentry clearfix">
+          <div class="post-not-found hentry clearfix">
             <div class="article-header">
               <h1><?php _e( "Sorry, No Results." ); ?></h1>
             </div>

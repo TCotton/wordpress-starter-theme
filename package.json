@@ -6,13 +6,14 @@
  "repository": "https://github.com/TCotton/wordpress-starter-theme",
  "author": "Andy Walpole",
  "license": "GL2PS",
- "scripts": {
-  "lint": "eslint resources/js/*.js",
-  "lint-staged": "lint-staged"
- },
  "pre-commit": "lint-staged",
  "lint-staged": {
   "resources/js/*.js": "eslint"
+ },
+ "scripts": {
+  "lint": "eslint resources/js/*.js",
+  "lint-fix": "eslint resources/js/*.js --fix",
+  "lint-staged": "lint-staged"
  },
  "devDependencies": {
   "babel-core": "^6.20.0",

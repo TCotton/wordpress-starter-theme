@@ -3,7 +3,7 @@
 }
 ?>
 
-<div id="sidebar" class="sidebar clearfix">
+<div class="sidebar clearfix">
 
 	<?php //var_dump(dynamic_sidebar( 'sidebar1' )); ?>
 	<?php dynamic_sidebar( 'primary' ); ?>

@@ -2,8 +2,8 @@
 	die( 'Please do not load this page directly. Thanks!' );
 } ?>
 
-<div id="footer">
-  <div id="inner-footer" class="wrap clearfix">
+<div class="footer">
+  <div class="inner-footer wrap clearfix">
     <div>
 
 			<?php if ( class_exists( '\\menu\\Create_Menus' ) ) {
