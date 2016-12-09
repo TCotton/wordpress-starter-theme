@@ -333,4 +333,4 @@ class Content_Type {
 } // end class
 
 
-new \startertheme\content\Content_Type; ?>
+new \startertheme\content\Content_Type;

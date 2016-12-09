@@ -80,4 +80,4 @@ class Create_Menus {
 
 }
 
-new \startertheme\menu\Create_Menus(); 
+new \startertheme\menu\Create_Menus();

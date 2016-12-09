@@ -1,4 +1,4 @@
-<?php require_once( TEMPLATEPATH . './classes/Create_Menus.php' ); ?>
+<?php require_once( TEMPLATEPATH . '/classes/Create_Menus.php' ); ?>
 <!DOCTYPE HTML>
 <html lang="en">
 

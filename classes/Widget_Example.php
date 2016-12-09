@@ -83,11 +83,9 @@ class Widget_Example extends WP_Widget {
 		extract( args );
 
 		echo $before_widget;
-
-
 		echo $after_widget;
-
 
 	}
 
 }
+

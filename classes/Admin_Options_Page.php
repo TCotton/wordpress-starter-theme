@@ -344,7 +344,6 @@ class Admin_Options_Page {
 }
 
 if ( is_admin() ) {
-
 	new \startertheme\options\Admin_Options_Page();
-
 }
+

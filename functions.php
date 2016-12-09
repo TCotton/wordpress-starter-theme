@@ -151,3 +151,6 @@ function starter_filter_ptags_on_images( $content ) {
 }
 
 @ini_set( 'mysql.trace_mode', 0 );
+@error_reporting(E_ALL);
+@ini_set('display_errors', 1);
+
