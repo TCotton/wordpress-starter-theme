@@ -1,0 +1,9 @@
+{
+  "name": "wordpress-starter-theme",
+  "version": "1.0.0",
+  "description": "Wordpress starter theme using latest technologies",
+  "main": "index.js",
+  "repository": "https://github.com/TCotton/wordpress-starter-theme",
+  "author": "Andy Walpole",
+  "license": "GPLv2"
+}
