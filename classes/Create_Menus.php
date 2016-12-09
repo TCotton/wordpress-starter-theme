@@ -36,7 +36,7 @@ class Create_Menus {
 	/**
 	 * Create_Menus::main_nav()
 	 *
-	 * @return function
+	 * @return wp_nav_menu
 	 */
 	public static function main_nav() {
 		// display the wp3 menu if available

@@ -2,7 +2,7 @@
 
 /**
  * @author
- * @copyright 2012
+ * @copyright 2016
  */
 
 add_action( 'widgets_init', 'register_example_widget' );
@@ -42,6 +42,7 @@ class Widget_Example extends WP_Widget {
 
 		$name = strip_tags( $instance['name'] );
 
+		// what is bio here for?
 		$bio = strip_tags( $instance['bio'] );
 
 		$form = '<h3>Title here</h3>';
