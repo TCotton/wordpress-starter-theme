@@ -169,6 +169,8 @@ template {
  */
 html {
   font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
@@ -614,7 +616,6 @@ select,
 textarea,
 [tabindex] {
   /* 1 */
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 
@@ -663,7 +664,7 @@ caption {
 }
 
 /* slight character and word gap of retina devices to make the text more legible */
-@media (min-device-pixel-ratio: 2), not all, (min-resolution: 2dppx), (min-resolution: 192dpi) {
+@media (min-device-pixel-ratio: 2), not all, (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
   p,
   li {
     letter-spacing: 0.01rem;
@@ -714,6 +715,8 @@ input[type=text],
 input[type=email],
 input[type=url],
 textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border-radius: 0;
 }
