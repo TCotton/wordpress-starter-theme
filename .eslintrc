@@ -4,8 +4,10 @@
   "ecmaVersion": 6,
   "sourceType": "module"
  },
- "plugins": ["babel"],
- "extends": ["airbnb/base"],
+ "plugins": [
+  "babel"
+ ],
+ "extends": "airbnb/base",
  "env": {
   "browser": true,
   "jquery": true,
@@ -15,7 +17,9 @@
   "Promise": true
  },
  "rules": {
-  "indent": [2, "tab", {"SwitchCase": 1}],
-  "comma-dangle": 0
+  "linebreak-style": [
+   "error",
+   "windows"
+  ]
  }
 }
