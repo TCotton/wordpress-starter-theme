@@ -51,6 +51,14 @@ GLOBALNAMESPACE.NEWOBJECT = (function NEWOBJECT($) {
 
 }(jQuery));
 
+class NewClass {
+
+  constructor() {
+
+  }
+
+}
+
 window.onload = function onload() {
 
   GLOBALNAMESPACE.NEWOBJECT.init({

@@ -68,71 +68,70 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 // JavaScript Document
 // Starts with Addy Osmani's module / facade
 // http://addyosmani.com/resources/essentialjsdesignpatterns/book/#highlighter_436043
 
-const GLOBALNAMESPACE = {};
+var GLOBALNAMESPACE = {};
 
-GLOBALNAMESPACE.NEWOBJECT = (function NEWOBJECT($) {
+GLOBALNAMESPACE.NEWOBJECT = function NEWOBJECT($) {
 
-  const fauxPrivate = {
-    i: 5,
-    get: function get() {
+      var fauxPrivate = {
+            i: 5,
+            get: function get() {
 
-      console.log(`current value:${this.i}`);
+                  console.log('current value:' + this.i);
+            },
+            set: function set(val) {
 
-    },
-    set: function set(val) {
+                  this.i = val;
+            },
+            run: function run() {
 
-      this.i = val;
+                  console.log('running');
+            },
+            jump: function jump() {
 
-    },
-    run: function run() {
+                  console.log('jumping');
+            }
+      };
+      return {
+            init: function init(args) {
 
-      console.log('running');
+                  fauxPrivate.set(args.val);
+                  fauxPrivate.get();
+                  if (args.run) {
 
-    },
-    jump: function jump() {
+                        fauxPrivate.run();
+                  }
+                  if (args.run) {
 
-      console.log('jumping');
+                        fauxPrivate.jump();
+                  }
+            }
 
-    }
-  };
-  return {
-    init: function init(args) {
+      };
+}(jQuery);
 
-      fauxPrivate.set(args.val);
-      fauxPrivate.get();
-      if (args.run) {
-
-        fauxPrivate.run();
-
-      }
-      if (args.run) {
-
-        fauxPrivate.jump();
-
-      }
-
-    }
-
-  };
-
-}(jQuery));
+var NewClass = function NewClass() {
+      _classCallCheck(this, NewClass);
+};
 
 window.onload = function onload() {
 
-  GLOBALNAMESPACE.NEWOBJECT.init({
-    run: true,
-    val: 10
-  });
-  // outputs current value: 10, running
-
+      GLOBALNAMESPACE.NEWOBJECT.init({
+            run: true,
+            val: 10
+      });
+      // outputs current value: 10, running
 };
-
 
 /***/ }
 /******/ ]);
