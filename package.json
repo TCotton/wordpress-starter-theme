@@ -13,7 +13,8 @@
  "scripts": {
   "lint": "eslint resources/js/*.js",
   "lint-fix": "eslint resources/js/*.js --fix",
-  "lint-staged": "lint-staged"
+  "lint-staged": "lint-staged",
+  "start": "webpack --config webpack.config.js"
  },
  "devDependencies": {
   "babel-core": "6.20.0",
@@ -35,7 +36,7 @@
   "sass-lint": "1.10.2",
   "sass-loader": "4.0.2",
   "sasslint-webpack-plugin": "1.0.4",
-  "webpack": "1.14.0"
+  "webpack": "beta"
  },
  "dependencies": {}
 }
