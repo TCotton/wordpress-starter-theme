@@ -43,6 +43,7 @@ module.exports = {
 
   },
 
+
   performance: {
     hints: 'warning', // enum
     maxAssetSize: 200000, // int (in bytes),

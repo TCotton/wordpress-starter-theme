@@ -75,7 +75,6 @@ function snip_category_rel( $result ) {
 	return $result;
 }
 
-
 /*********************
  * PAGE NAVI
  *********************/
