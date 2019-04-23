@@ -36,7 +36,7 @@ class Widget_Example extends WP_Widget {
 			'bio'   => ''
 		);
 
-		$instance = wp_parse_tags( (array ) $instance, $defaults );
+		$instance = wp_parse_args( (array ) $instance, $defaults );
 
 		$title = strip_tags( $instance['title'] );
 

@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./script.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./js/script.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./script.js":
-/*!*******************!*\
-  !*** ./script.js ***!
-  \*******************/
+/***/ "./js/script.js":
+/*!**********************!*\
+  !*** ./js/script.js ***!
+  \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// JavaScript Document\n// Starts with Addy Osmani's module / facade\n// http://addyosmani.com/resources/essentialjsdesignpatterns/book/#highlighter_436043\nvar GLOBALNAMESPACE = {};\n\nGLOBALNAMESPACE.NEWOBJECT = function NEWOBJECT($) {\n  var fauxPrivate = {\n    i: 5,\n    get: function get() {\n      console.log(\"current value:\".concat(this.i));\n    },\n    set: function set(val) {\n      this.i = val;\n    },\n    run: function run() {\n      console.log('running');\n    },\n    jump: function jump() {\n      console.log('jumping');\n    }\n  };\n  return {\n    init: function init(args) {\n      fauxPrivate.set(args.val);\n      fauxPrivate.get();\n\n      if (args.run) {\n        fauxPrivate.run();\n      }\n\n      if (args.run) {\n        fauxPrivate.jump();\n      }\n    }\n  };\n}(jQuery);\n\nwindow.onload = function onload() {\n  GLOBALNAMESPACE.NEWOBJECT.init({\n    run: true,\n    val: 10\n  }); // outputs current value: 10, running\n};\n\n//# sourceURL=webpack:///./script.js?");
+eval("// JavaScript Document\n// Starts with Addy Osmani's module / facade\n// http://addyosmani.com/resources/essentialjsdesignpatterns/book/#highlighter_436043\n\n/* eslint-disable */\nvar GLOBALNAMESPACE = {};\n\nGLOBALNAMESPACE.NEWOBJECT = function NEWOBJECT($) {\n  var fauxPrivate = {\n    i: 5,\n    get: function get() {\n      console.log(\"current value:\".concat(this.i));\n    },\n    set: function set(val) {\n      this.i = val;\n    },\n    run: function run() {\n      console.log('running');\n    },\n    jump: function jump() {\n      console.log('jumping');\n    }\n  };\n  return {\n    init: function init(args) {\n      fauxPrivate.set(args.val);\n      fauxPrivate.get();\n\n      if (args.run) {\n        fauxPrivate.run();\n      }\n\n      if (args.run) {\n        fauxPrivate.jump();\n      }\n    }\n  };\n}(jQuery);\n\nwindow.onload = function onload() {\n  GLOBALNAMESPACE.NEWOBJECT.init({\n    run: true,\n    val: 10\n  }); // outputs current value: 10, running\n};\n/* eslint-enable */\n\n//# sourceURL=webpack:///./js/script.js?");
 
 /***/ })
 

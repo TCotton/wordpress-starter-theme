@@ -31,7 +31,7 @@
 			echo ' - page ' . $paged;
 		} ?>
   </title>
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ) .print '?' . rand(); ?>"/>
+  <link rel="stylesheet" type="text/css" href="<?php get_stylesheet_uri() .print '?' . rand(); ?>"/>
 
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo( 'rdf_url' ); ?>" title="<?php printf( __
 	( '%s latest posts' ), esc_html( get_bloginfo( 'name' ) ) ) ?>"/>
