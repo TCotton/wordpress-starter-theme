@@ -1,7 +1,7 @@
 // JavaScript Document
 // Starts with Addy Osmani's module / facade
 // http://addyosmani.com/resources/essentialjsdesignpatterns/book/#highlighter_436043
-
+/* eslint-disable */
 const GLOBALNAMESPACE = {};
 
 GLOBALNAMESPACE.NEWOBJECT = (function NEWOBJECT($) {
@@ -51,14 +51,6 @@ GLOBALNAMESPACE.NEWOBJECT = (function NEWOBJECT($) {
 
 }(jQuery));
 
-class NewClass {
-
-  constructor() {
-
-  }
-
-}
-
 window.onload = function onload() {
 
   GLOBALNAMESPACE.NEWOBJECT.init({
@@ -68,3 +60,5 @@ window.onload = function onload() {
   // outputs current value: 10, running
 
 };
+
+/* eslint-enable */

@@ -1,52 +1,69 @@
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
-
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-
+/******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
 /******/ 			l: false,
 /******/ 			exports: {}
 /******/ 		};
-
+/******/
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.l = true;
-
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-
-
+/******/
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
-
+/******/
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
-
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-
+/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
 /******/ 		}
 /******/ 	};
-
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
 /******/ 	__webpack_require__.n = function(module) {
 /******/ 		var getter = module && module.__esModule ?
@@ -55,83 +72,29 @@
 /******/ 		__webpack_require__.d(getter, 'a', getter);
 /******/ 		return getter;
 /******/ 	};
-
+/******/
 /******/ 	// Object.prototype.hasOwnProperty.call
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-
+/******/
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
-
+/******/
+/******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./script.js");
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/******/ ({
 
-"use strict";
+/***/ "./script.js":
+/*!*******************!*\
+  !*** ./script.js ***!
+  \*******************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
+eval("// JavaScript Document\n// Starts with Addy Osmani's module / facade\n// http://addyosmani.com/resources/essentialjsdesignpatterns/book/#highlighter_436043\nvar GLOBALNAMESPACE = {};\n\nGLOBALNAMESPACE.NEWOBJECT = function NEWOBJECT($) {\n  var fauxPrivate = {\n    i: 5,\n    get: function get() {\n      console.log(\"current value:\".concat(this.i));\n    },\n    set: function set(val) {\n      this.i = val;\n    },\n    run: function run() {\n      console.log('running');\n    },\n    jump: function jump() {\n      console.log('jumping');\n    }\n  };\n  return {\n    init: function init(args) {\n      fauxPrivate.set(args.val);\n      fauxPrivate.get();\n\n      if (args.run) {\n        fauxPrivate.run();\n      }\n\n      if (args.run) {\n        fauxPrivate.jump();\n      }\n    }\n  };\n}(jQuery);\n\nwindow.onload = function onload() {\n  GLOBALNAMESPACE.NEWOBJECT.init({\n    run: true,\n    val: 10\n  }); // outputs current value: 10, running\n};\n\n//# sourceURL=webpack:///./script.js?");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+/***/ })
 
-// JavaScript Document
-// Starts with Addy Osmani's module / facade
-// http://addyosmani.com/resources/essentialjsdesignpatterns/book/#highlighter_436043
-
-var GLOBALNAMESPACE = {};
-
-GLOBALNAMESPACE.NEWOBJECT = function NEWOBJECT($) {
-
-      var fauxPrivate = {
-            i: 5,
-            get: function get() {
-
-                  console.log('current value:' + this.i);
-            },
-            set: function set(val) {
-
-                  this.i = val;
-            },
-            run: function run() {
-
-                  console.log('running');
-            },
-            jump: function jump() {
-
-                  console.log('jumping');
-            }
-      };
-      return {
-            init: function init(args) {
-
-                  fauxPrivate.set(args.val);
-                  fauxPrivate.get();
-                  if (args.run) {
-
-                        fauxPrivate.run();
-                  }
-                  if (args.run) {
-
-                        fauxPrivate.jump();
-                  }
-            }
-
-      };
-}(jQuery);
-
-var NewClass = function NewClass() {
-      _classCallCheck(this, NewClass);
-};
-
-window.onload = function onload() {
-
-      GLOBALNAMESPACE.NEWOBJECT.init({
-            run: true,
-            val: 10
-      });
-      // outputs current value: 10, running
-};
-
-/***/ }
-/******/ ]);
+/******/ });

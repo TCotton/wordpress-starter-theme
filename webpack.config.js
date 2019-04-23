@@ -10,6 +10,8 @@ module.exports = {
     filename: '[name].bundle.js'
   },
 
+  mode: 'development',
+
   module: {
 
     rules: [
@@ -19,13 +21,7 @@ module.exports = {
         use: [{
           loader: 'babel-loader',
           options: {
-            'presets': [
-              ['env', {
-                'target': {
-                  'browsers': ['last 2 versions']
-                }
-              }]
-            ]
+            presets: ['@babel/preset-env']
           }
         }]
       },
