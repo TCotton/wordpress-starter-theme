@@ -149,6 +149,8 @@ function starter_filter_ptags_on_images( $content ) {
 
 }
 
+wp_enqueue_style( 'customstyles', get_stylesheet_directory_uri() . '/resources/css/index.css' );
+
 @ini_set( 'mysql.trace_mode', 0 );
 @error_reporting(E_ALL);
 @ini_set('display_errors', 1);
