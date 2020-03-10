@@ -3,7 +3,6 @@ namespace startertheme\sidebars;
 
 /**
  * @author Andy Walpole
- * @date 14/7/2012
  *
  */
 

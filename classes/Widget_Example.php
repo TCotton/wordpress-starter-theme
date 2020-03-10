@@ -1,10 +1,4 @@
 <?php
-
-/**
- * @author
- * @copyright 2016
- */
-
 add_action( 'widgets_init', 'register_example_widget' );
 
 function register_example_widget() {

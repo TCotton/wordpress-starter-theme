@@ -5,7 +5,6 @@
 
 <div class="sidebar clearfix">
 
-	<?php //var_dump(dynamic_sidebar( 'sidebar1' )); ?>
 	<?php dynamic_sidebar( 'primary' ); ?>
 
 	<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>

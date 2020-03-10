@@ -6,7 +6,6 @@ namespace startertheme\taxonomy;
  * @package
  * @author
  * @copyright
- * @version 2012
  * @access public
  *
  * Class for creating new taxonomy terms
