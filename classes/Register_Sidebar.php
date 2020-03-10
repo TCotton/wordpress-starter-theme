@@ -9,9 +9,7 @@ namespace startertheme\sidebars;
 class Register_Sidebars {
 
 	public function __construct() {
-
 		add_action( 'widgets_init', array( &$this, 'register_sidebars' ) );
-
 	}
 
 	public function register_sidebars() {
@@ -35,10 +33,7 @@ class Register_Sidebars {
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
 		) );
-
 	}
-
-
 }
 
 new \startertheme\sidebars\Register_Sidebars();

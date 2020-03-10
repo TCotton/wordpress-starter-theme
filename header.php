@@ -38,8 +38,6 @@
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>"/>
 
-  <script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/resources/js/dist/app.bundle.js"></script>
-
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
 	<?php wp_head() // For plugins ?>

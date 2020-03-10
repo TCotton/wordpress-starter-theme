@@ -1,5 +1,9 @@
 <?php
 namespace startertheme\shortcodes;
+/**
+ * @author A Walpole
+ *
+ */
 
 class Create_Shortcodes {
 
